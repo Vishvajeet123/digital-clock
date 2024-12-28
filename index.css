@@ -59,17 +59,20 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 100%; /* Ensure it's dynamic or increase fixed width */
+    max-width: 500px; /* Optional: Prevent it from growing too large */
+    overflow: hidden; /* Prevent content overflow */
 }
 
+/* Time child elements */
 .time > div {
     text-align: center;
-    padding: 10px;
+    padding: 5px; /* Reduce padding */
     background: #e9eff5;
     border-radius: 6px;
-    flex: 1;
-    margin: 0 5px;
-    font-size: 1.1em;
+    flex: 1; /* Flex evenly among all items */
+    margin: 0 3px; /* Slightly reduce gap */
+    font-size: 1em; /* Slightly smaller font */
     color: #333;
     font-weight: bold;
 }
