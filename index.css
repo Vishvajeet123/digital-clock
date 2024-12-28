@@ -51,6 +51,8 @@ body {
 }
 
 /* Time container */
+
+
 .time {
     display: flex;
     justify-content: space-between;
@@ -59,25 +61,28 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure it's dynamic or increase fixed width */
-    max-width: 500px; /* Optional: Prevent it from growing too large */
-    overflow: hidden; /* Prevent content overflow */
+    width: 100%;
+    max-width: 600px; /* Allow extra width for longer content */
+    box-sizing: border-box; /* Include padding and border in width */
+    overflow: hidden; /* Prevent overflow */
 }
 
-/* Time child elements */
 .time > div {
     text-align: center;
-    padding: 5px; /* Reduce padding */
+    padding: 5px;
     background: #e9eff5;
     border-radius: 6px;
-    flex: 1; /* Flex evenly among all items */
-    margin: 0 3px; /* Slightly reduce gap */
-    font-size: 1em; /* Slightly smaller font */
+    flex: 1; /* Ensure equal space distribution */
+    margin: 0 5px;
+    font-size: 1em;
     color: #333;
     font-weight: bold;
+    word-wrap: break-word; /* Handle long words */
 }
+
 
 .time > div p {
     margin: 0;
+    font-size: 0.9em;
 }
 
